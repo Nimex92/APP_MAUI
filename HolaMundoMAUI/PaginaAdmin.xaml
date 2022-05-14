@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HolaMundoMAUI.PaginaAdmin"
              Title="PaginaAdmin"
+<<<<<<< Updated upstream
              BackgroundColor="White">
     <FlexLayout BackgroundColor="White">
         <StackLayout x:Name="MenuLateral" 
@@ -12,6 +13,45 @@
                      Margin="0,-32,0,0"
                      HorizontalOptions="StartAndExpand">
             <StackLayout>
+=======
+             BackgroundColor="#A29FA0	">
+    <StackLayout >
+        <StackLayout x:Name="BarraSuperior"
+                     BackgroundColor="#2B282D"
+                     WidthRequest="2920"
+                     HeightRequest="70"
+                     ZIndex="998"
+                     Margin="30,-70,0,0">
+            <HorizontalStackLayout x:Name="BotonCerrarSession" 
+                                   HorizontalOptions="Center"
+                                   Margin="1200,20,0,0">
+                <ImageButton Source="logout.png"
+                     VerticalOptions="Center"
+                     Clicked="BotonCerrarSesion_Clicked"
+                     WidthRequest="30"/>
+                <Button Text="Cerrar sesión"
+                   HorizontalOptions="Center"
+                   Clicked="BotonCerrarSesion_Clicked"
+                   TextColor="White"
+                   Margin="5,0,0,0"
+                   BackgroundColor="#2B282D"/>
+            </HorizontalStackLayout>
+        </StackLayout>
+        <FlexLayout x:Name="MenuLateral" 
+                     WidthRequest="130" 
+                     HeightRequest="1100"
+                     BackgroundColor="#2B282D"
+                     Margin="0,-55,0,0"
+                     HorizontalOptions="StartAndExpand"
+                     Direction="Column"
+                     AlignItems="Strech"
+                     ZIndex="999"
+                     FlexLayout.Basis="100%"
+                     Wrap="Wrap"
+                     JustifyContent="Start">
+
+            <StackLayout x:Name="LabelUser">
+>>>>>>> Stashed changes
                 <Label
                     x:Name="Label_NameUser"
                     VerticalTextAlignment="Center"
@@ -25,6 +65,7 @@
                     x:Name="BtnUsuarios"
                     Source="usuario.png"
                     WidthRequest="70"
+<<<<<<< Updated upstream
                     HeightRequest="70"
                     Margin="0,-10,0,0"
                     Clicked="BtnUsuarios_Clicked"/>
@@ -33,9 +74,14 @@
                     FontAttributes="Bold"
                     FontSize="12"
                     Margin="40,-15,0,0"/>
+=======
+                    HeightRequest="80"
+                    Clicked="BtnTrabajadores_Clicked"/>
+>>>>>>> Stashed changes
             </StackLayout>
             <StackLayout x:Name="BotonTrabajador">
                 <ImageButton
+<<<<<<< Updated upstream
                 x:Name="BtnTrabajadores"
                 Source="trabajador.png"
                 WidthRequest="70"
@@ -47,9 +93,18 @@
                 FontAttributes="Bold"
                 FontSize="12"
                 Margin="25,-10,0,0"/>
+=======
+                    x:Name="BtnGruposTrabajo"
+                    Source="turnos.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnGruposTrabajo_Clicked"/>
+>>>>>>> Stashed changes
             </StackLayout>
             <StackLayout x:Name="BotonGrupoTrabajo">
                 <ImageButton
+<<<<<<< Updated upstream
                 x:Name="BtnGruposTrabajo"
                 Source="grupos.png"
                 WidthRequest="70"
@@ -101,6 +156,60 @@
         </StackLayout >
         <StackLayout x:Name="ContenedorVentana">
             <StackLayout x:Name="PaginaPrincipal">
+=======
+                    x:Name="BtnEquiposTrabajo"
+                    Source="equipostrabajo.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnEquiposTrabajo_Clicked"/>
+            </StackLayout>
+            <StackLayout x:Name="BotonZonas">
+                <ImageButton
+                    x:Name="BtnZonas"
+                    Source="zonas.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnZonas_Clicked"/>
+            </StackLayout>
+            <StackLayout x:Name="BotonTareas">
+                <ImageButton
+                    x:Name="BtnTareas"
+                    Source="tareas.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnTareas_Clicked"/>
+            </StackLayout>
+            <StackLayout x:Name="BotonNominas">
+                <ImageButton
+                    x:Name="BtnProblemas"
+                    Source="problemas.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnProblemas_Clicked"/>
+            </StackLayout>
+            <StackLayout x:Name="BotonVacaciones">
+                <ImageButton
+                    x:Name="BtnSolicitudVacaciones"
+                    Source="vacaciones.png"
+                    WidthRequest="70"
+                    HeightRequest="80"
+                    Margin="0,10,0,0"
+                    Clicked="BtnSolicitudVacaciones_Clicked"/>
+            </StackLayout>
+        </FlexLayout >
+        <StackLayout x:Name="ContenedorVentana"
+                    HorizontalOptions="Center"
+                    WidthRequest="1250"
+                    HeightRequest="650"
+                    Margin="130,-1035,0,0"
+                    BackgroundColor="White">
+
+            <StackLayout x:Name="PaginaPrincipal" IsVisible="False">
+>>>>>>> Stashed changes
 
             </StackLayout>
             <StackLayout x:Name="ListViewUsers" 
@@ -220,7 +329,13 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout x:Name="ListViewWorkers" 
+<<<<<<< Updated upstream
                 HorizontalOptions="Center" Margin="0,10,0,0" IsEnabled="False" IsVisible="False">
+=======
+                         HorizontalOptions="Center" 
+                         VerticalOptions="Center"
+                         IsVisible="False">
+>>>>>>> Stashed changes
                 <Label x:Name="LabelTitulo2"
                     Text="Tech Talent &#10; Página de administracion &#10;de trabajadores"
                     TextColor="Black"
@@ -275,14 +390,14 @@
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    
+
                                     <Label 
                                        WidthRequest="150"
                                        Text="{Binding nombre}" 
                                        Margin="-120,0,0,0" 
                                        FontSize="16"
                                        VerticalOptions="Center"/>
-                                    
+
                                     <Label 
                                        Text="{Binding grupo.Turno}" 
                                        Margin="90,0,0,0" 
@@ -297,6 +412,7 @@
                                        WidthRequest="100"
                                         VerticalOptions="Center"/>
                                     <ImageButton
+<<<<<<< Updated upstream
                                        Source="editar.png"  
                                        WidthRequest="50"
                                        HeightRequest="50"
@@ -304,6 +420,28 @@
                                        Margin="510,0,0,0"
                                        x:Name="BotonEditarTrabajadores"
                                        Clicked="BotonEditarTrabajadores_Clicked"/>
+=======
+                                           Source="calendarmini.png"
+                                           MaximumHeightRequest="50"
+                                           MaximumWidthRequest="50"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="510,10,0,0"
+                                           x:Name="BotonCalendario"
+                                           Clicked="BotonCalendario_Clicked"/>
+                                    <ImageButton
+                                           Source="editar.png" 
+                                           Aspect="AspectFill"
+                                           MaximumHeightRequest="50"
+                                           MaximumWidthRequest="50"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="570,10,0,0"
+                                           x:Name="BotonEditarTrabajadores"
+                                           Clicked="BotonEditarTrabajadores_Clicked"/>
+>>>>>>> Stashed changes
                                     <ImageButton
                                        Source="borrar.png"
                                        WidthRequest="50"
@@ -338,8 +476,14 @@
                            VerticalOptions="Center"/>
                 </HorizontalStackLayout>
             </StackLayout>
+<<<<<<< Updated upstream
             <StackLayout x:Name="ListViewGroups" 
                          IsVisible="False" IsEnabled="False">
+=======
+            <StackLayout x:Name="ListViewGroups"
+                         IsVisible="False" IsEnabled="False"
+                         >
+>>>>>>> Stashed changes
                 <Label 
                 Text="Tech Talent &#10; Gestion de turnos"
                 TextColor="Black"
@@ -360,18 +504,49 @@
                                         VerticalOptions="Center"
                                     />
                     <Label  
+<<<<<<< Updated upstream
                                        Text="Hora de entrada:" 
+=======
+                                       Text="Hora entrada" 
+>>>>>>> Stashed changes
                                        FontSize="16"
                                        Margin="55,0,0,0"
                                        FontAttributes="Bold"
                                        WidthRequest="170"
                                         VerticalOptions="Center"/>
                     <Label  
-                                       Text="Hora de salida:" 
+                                       Text="Hora de salida" 
                                        FontSize="16"
+<<<<<<< Updated upstream
                                        Margin="15,0,0,0"
                                        FontAttributes="Bold"
                                        WidthRequest="130"
+=======
+                                       Margin="-50,0,0,0"
+                                       FontAttributes="Bold"
+                                       WidthRequest="130"
+                                       VerticalOptions="Center"/>
+                    <Label
+                                        Text="Dias de la semana"
+                                        FontSize="16"
+                                        Margin="5,0,0,0"
+                                        FontAttributes="Bold"
+                                        WidthRequest="160"
+                                        VerticalOptions="Center"/>
+                    <Label
+                                        Text="Válido desde"
+                                        FontSize="16"
+                                        Margin="35,0,0,0"
+                                        FontAttributes="Bold"
+                                        WidthRequest="160"
+                                        VerticalOptions="Center"/>
+                    <Label
+                                        Text="Válido hasta"
+                                        FontSize="16"
+                                        Margin="-20,0,0,0"
+                                        FontAttributes="Bold"
+                                        WidthRequest="160"
+>>>>>>> Stashed changes
                                         VerticalOptions="Center"/>
                 </HorizontalStackLayout>
                 <StackLayout BackgroundColor="Black"
@@ -380,11 +555,18 @@
                      HorizontalOptions="Center"/>
                 <StackLayout HorizontalOptions="Center" Margin="0,10,0,0">
                     <ListView 
+<<<<<<< Updated upstream
                 x:Name="ListViewGrupos" 
                 WidthRequest="700"  
                 HorizontalOptions="Center" 
                 ItemSelected="OnItemSelectedGruposTrabajo"
                 SeparatorColor="Black">
+=======
+                        x:Name="ListViewGrupos" 
+                        ItemSelected="OnItemSelectedGruposTrabajo"
+                        SeparatorColor="Black"
+                        SeparatorVisibility="Default">
+>>>>>>> Stashed changes
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -404,12 +586,47 @@
                                        Margin="-250,0,0,0" 
                                        FontSize="16"
                                         VerticalOptions="Center"/>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
                                         <Label 
                                        Text="{Binding HoraEntrada}" 
                                        Margin="90,0,0,0" 
                                        FontSize="16"
                                        WidthRequest="100"
                                        VerticalOptions="Center"/>
+<<<<<<< Updated upstream
+=======
+                                        <Label 
+                                       Text="{Binding HoraSalida}" 
+                                       Margin="-330,0,0,0" 
+                                       FontSize="16"
+                                       WidthRequest="100"
+                                       VerticalOptions="Center"/>
+                                        <HorizontalStackLayout x:Name="CamposDiasDeLaSemana"
+                                            Margin="370,0,0,0">
+                                            <HorizontalStackLayout>
+                                                <Label Text="L" FontAttributes="Bold" Margin="5,0,0,0"/>
+                                                <Label Text="M" FontAttributes="Bold" Margin="10,0,0,0"/>
+                                                <Label Text="X" FontAttributes="Bold" Margin="10,0,0,0"/>
+                                                <Label Text="J" FontAttributes="Bold" Margin="15,0,0,0"/>
+                                                <Label Text="V" FontAttributes="Bold" Margin="15,0,0,0"/>
+                                                <Label Text="S" FontAttributes="Bold" Margin="15,0,0,0"/>
+                                                <Label Text="D" FontAttributes="Bold" Margin="15,0,0,0"/>
+                                            </HorizontalStackLayout>
+                                            <HorizontalStackLayout Margin="-10,20,0,0"  HeightRequest="15">
+                                                <CheckBox IsChecked="{Binding EsLunes}" Margin="-140,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsMartes}" Margin="-95,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsMiercoles}" Margin="-100,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsJueves}" Margin="-100,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsViernes}" Margin="-100,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsSabado}" Margin="-100,5,0,0" IsEnabled="False"/>
+                                                <CheckBox IsChecked="{Binding EsDomingo}" Margin="-95,5,0,0" IsEnabled="False"/>
+                                            </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
+
+>>>>>>> Stashed changes
                                         <Label 
                                        Text="{Binding HoraSalida}" 
                                        Margin="440,0,0,0" 
@@ -445,6 +662,7 @@
                 <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="150"
                              HeightRequest="50" Margin="-30,0,0,0">
                     <ImageButton x:Name="AddGrupos"
+<<<<<<< Updated upstream
                                  Source="addgroups.png"
                                  HorizontalOptions="Start"
                                  Clicked="NuevoGrupoTrabajo"
@@ -455,11 +673,29 @@
                            Margin="5,0,0,0"
                            FontAttributes="Bold"
                            VerticalOptions="Center"/>
+=======
+                                     Source="addgroups.png"
+                                     HorizontalOptions="Start"
+                                     Clicked="NuevoGrupoTrabajo"
+                                     VerticalOptions="Center"/>
+                    <Label Text="Añadir turno"
+                               FontSize="16"
+                               TextColor="Black"
+                               Margin="5,0,0,0"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+>>>>>>> Stashed changes
 
                 </HorizontalStackLayout>
             </StackLayout>
             <StackLayout x:Name="ListViewZones"
+<<<<<<< Updated upstream
                          IsVisible="False" IsEnabled="False">
+=======
+                         IsVisible="False" IsEnabled="False" >
+>>>>>>> Stashed changes
                 <Label 
                 Text="Tech Talent &#10; Gestion de zonas"
                 TextColor="Black"
@@ -559,7 +795,11 @@
             </StackLayout>
             <StackLayout x:Name="ListViewTasks" 
                          IsEnabled="False" IsVisible="False"
+<<<<<<< Updated upstream
                 HorizontalOptions="Center" Margin="0,10,0,0">
+=======
+                HorizontalOptions="Center" >
+>>>>>>> Stashed changes
                 <Label 
                     Text="Tech Talent &#10; Gestion de tareas"
                     TextColor="Black"
@@ -678,6 +918,330 @@
                     </HorizontalStackLayout>
                 </StackLayout>
             </StackLayout>
+<<<<<<< Updated upstream
+=======
+            <StackLayout x:Name="ListViewTeams" 
+                         IsEnabled="False" IsVisible="False">
+                <Label 
+                    Text="Tech Talent &#10; Gestion de equipos de trabajo"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Tech Talent Fiching System"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"
+                    x:Name="LabelTitulo6"/>
+                <HorizontalStackLayout Margin="250,0,0,0" VerticalOptions="Center"
+                             HeightRequest="20" WidthRequest="800">
+                    <Label 
+                        Text="Nombre equipo"
+                        FontAttributes="Bold"/>
+
+                </HorizontalStackLayout>
+                <StackLayout BackgroundColor="Black"
+                     HeightRequest="2"
+                     WidthRequest="720"
+                     HorizontalOptions="Center"/>
+                <StackLayout HorizontalOptions="Center" Margin="0,5,0,0">
+                    <ListView 
+                        x:Name="ListViewEquipos" 
+                        WidthRequest="720"
+                        HorizontalOptions="Center" 
+                        ItemSelected="OnItemSelectedEquiposTrabajo"
+                        SeparatorColor="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Nombre}" 
+                                           Margin="-340,0,0,0" 
+                                           FontSize="16"/>
+                                        <ImageButton
+                                           Source="quitartrabajadordegrupo.png"  
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="500,0,0,0"
+                                           x:Name="BotonQuitarTrabajadorDeGrupo"
+                                           Clicked="BotonQuitarTrabajadorDeGrupo_Clicked"/>
+                                        <ImageButton
+                                           Source="editar.png"  
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="580,0,0,0"
+                                           x:Name="BotonEditarEquiposTrabajo"
+                                           Clicked="BotonEditarEquiposTrabajo_Clicked"/>
+                                        <ImageButton
+                                           Source="borrar.png"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="660,0,0,0"
+                                           x:Name="BotonBorrarTareas"
+                                           Clicked="BotonBorrarTareas_Clicked"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackLayout BackgroundColor="Black"
+                     HeightRequest="2"
+                     WidthRequest="720"
+                     HorizontalOptions="Center"/>
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                        <HorizontalStackLayout>
+                            <ImageButton 
+                                Source="addtareas.png"
+                                VerticalOptions="Center"
+                                x:Name="BtnAnadeEquipos"
+                                Clicked="BtnAnadeEquipos_Clicked"/>
+                            <Label Text="Añadir nuevo equipo de trabajo"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Margin="5,0,0,0">
+                            <ImageButton 
+                                Source="adduser.png"
+                                VerticalOptions="Center"
+                                x:Name="BtnAnadeTrabajadorAEquipo"
+                                Clicked="BtnAnadeTrabajadorAEquipo_Clicked"/>
+                            <Label Text="Añadir trabajador a equipo"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="ListViewCalendar" 
+                         IsEnabled="False" IsVisible="False"
+                         HorizontalOptions="Center" >
+                <Label 
+                    Text="Tech Talent &#10; Calendario laboral"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Tech Talent Fiching System"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"
+                    x:Name="LabelTitulo7"/>
+                <HorizontalStackLayout Margin="250,0,0,0" VerticalOptions="Center"
+                             HeightRequest="20" WidthRequest="800">
+                    <Label 
+                        Text="Motivo"
+                        Margin="45,0,0,0"
+                        FontAttributes="Bold"/>
+                    <Label 
+                        Text="Fecha"
+                        Margin="160,0,0,0"
+                        FontAttributes="Bold"/>
+                    <Label 
+                        Text="Disfrutado"
+                        Margin="120,0,0,0"
+                        FontAttributes="Bold"/>
+
+                </HorizontalStackLayout>
+                <StackLayout BackgroundColor="Black"
+                     HeightRequest="2"
+                     WidthRequest="720"
+                     HorizontalOptions="Center"/>
+                <StackLayout HorizontalOptions="Center" Margin="0,5,0,0">
+                    <ListView 
+                        x:Name="ListViewCalendario" 
+                        WidthRequest="720"
+                        HorizontalOptions="Center" 
+                        ItemSelected="OnItemSelectedCalendario"
+                        SeparatorColor="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Motivo}" 
+                                           Margin="-380,0,0,0" 
+                                           FontSize="16"
+                                           HeightRequest="30"/>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Fecha}" 
+                                           Margin="40,0,0,0" 
+                                           FontSize="16"/>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Disfrutado}" 
+                                           Margin="470,0,0,0" 
+                                           FontSize="16"/>
+
+                                        <ImageButton
+                                           Source="editar.png"  
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="580,0,0,0"
+                                           x:Name="BotonActualizaDias"
+                                           Clicked="BotonActualizaDias_Clicked"/>
+                                        <ImageButton
+                                           Source="borrar.png"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="660,0,0,0"
+                                           x:Name="BotonBorrarDias"
+                                           Clicked="BotonBorrarDias_Clicked"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackLayout BackgroundColor="Black"
+                     HeightRequest="2"
+                     WidthRequest="720"
+                     HorizontalOptions="Center"/>
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                        <HorizontalStackLayout>
+                            <ImageButton 
+                                Source="addtareas.png"
+                                VerticalOptions="Center"
+                                x:Name="BtnAnadeDias"
+                                Clicked="BtnAnadeDias_Clicked"/>
+                            <Label Text="Añadir Dias al calendario"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                    <Button
+                            x:Name="VolverATrabajadores"
+                            Text="Volver"
+                            Clicked="VolverATrabajadores_Clicked"
+                            WidthRequest="160"
+                            HeightRequest="35"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="ListViewNominas" 
+                         IsEnabled="False" IsVisible="False"
+                         HorizontalOptions="Center" >
+
+            </StackLayout>
+            <StackLayout x:Name="ListViewPedirVacaciones">
+
+            </StackLayout>
+            <StackLayout x:Name="ListViewIssues"
+                         IsEnabled="False" IsVisible="False"
+                         HorizontalOptions="Center" >
+                <Label 
+                    Text="Tech Talent &#10; Informe incidencias"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    SemanticProperties.Description="Tech Talent Fiching System"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"
+                    x:Name="LabelTitulo8"/>
+                <HorizontalStackLayout Margin="250,0,0,0" VerticalOptions="Center"
+                             HeightRequest="20" WidthRequest="800">
+                    <Label 
+                        Text="Trabajador"
+                        Margin="45,0,0,0"
+                        FontAttributes="Bold"/>
+                    <Label 
+                        Text="Motivo"
+                        Margin="60,0,0,0"
+                        FontAttributes="Bold"/>
+                    <Label 
+                        Text="Fecha"
+                        Margin="190,0,0,0"
+                        FontAttributes="Bold"/>
+
+                </HorizontalStackLayout>
+                <StackLayout BackgroundColor="Black"
+                     HeightRequest="2"
+                     WidthRequest="720"
+                     HorizontalOptions="Center"/>
+                <StackLayout HorizontalOptions="Center" Margin="0,5,0,0">
+                    <ListView 
+                        x:Name="ListViewIncidencias" 
+                        WidthRequest="720"
+                        HorizontalOptions="Center" 
+                        ItemSelected="OnItemSelectedProblemas"
+                        SeparatorColor="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding Trabajador.nombre}" 
+                                           Margin="-205,0,0,0" 
+                                           FontSize="16"
+                                           HeightRequest="30"/>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding MotivoIncidencia}" 
+                                           Margin="40,0,0,0" 
+                                           FontSize="16"/>
+                                        <Label 
+                                           WidthRequest="150"
+                                           VerticalOptions="Center"
+                                           Text="{Binding FechaIncidencia}" 
+                                           Margin="470,0,0,0" 
+                                           FontSize="16"/>
+
+                                        <ImageButton
+                                           Source="aceptar.png"  
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center"
+                                           Margin="580,0,0,0"
+                                           x:Name="BotonAceptarIncidencia"
+                                           Clicked="BotonAceptarIncidencia_Clicked"/>
+
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+>>>>>>> Stashed changes
         </StackLayout>
     </FlexLayout>
 </ContentPage>

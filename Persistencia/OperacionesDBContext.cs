@@ -48,8 +48,13 @@ namespace Persistencia
             }
 
         }
+<<<<<<< Updated upstream
         //Metodo para insertar un grupo de trabajo a la base de datos
         public static bool insertarGrupoTrabajo(string nombre, string horaEntrada, string horaSalida)
+=======
+        //Metodo para insertar una incidencia en la base de datos
+        public static void InsertaIncidencia(Incidencia i,PresenciaContext p)
+>>>>>>> Stashed changes
         {
             using var presenciaContext = new PresenciaContext();
             Turnos grupo = new Turnos(nombre, horaEntrada, horaSalida);
@@ -63,6 +68,7 @@ namespace Persistencia
                 return false;
             }
         }
+<<<<<<< Updated upstream
         //Metodo para insertar un fichaje en la base de datos
         public static bool insertaFichaje(int Trabajador, int GrupoTrabajo, string Entrada_Salida)
         {
@@ -87,6 +93,11 @@ namespace Persistencia
         }
         //Metodo para insertar un usuario en la base de datos
         public static bool insertaUsuario(string username, string password, bool esAdmin)
+=======
+        
+        //Metodo para insertar un trabajador en la base de datos
+        public static bool InsertaTrabajador(Trabajador t)
+>>>>>>> Stashed changes
         {
             if (username is not null)
             {

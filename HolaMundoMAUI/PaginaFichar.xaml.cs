@@ -130,6 +130,7 @@ public partial class PaginaFichar : ContentPage
 	}
 	private async void BotonFichar_Clicked(object sender, EventArgs e)
 	{
+<<<<<<< Updated upstream
 		//var trabajador = presenciaContext.Trabajador.Where(x => x.usuario.Username == username).Include(x=>x.grupo).FirstOrDefault();
 		OperacionesDBContext.insertaFichaje(trabajador.numero_tarjeta, trabajador.grupo.IdGrupo, "Entrada");
 		Fichajes fich = new Fichajes(trabajador, trabajador.grupo, dt, "Entrada");
@@ -137,6 +138,14 @@ public partial class PaginaFichar : ContentPage
 		presenciaContext.TrabajadorEnTurno.Add(new TrabajadorEnTurno(trabajador, fich));
 		presenciaContext.SaveChanges();
 		BotonFichar.IsVisible = false;
+=======
+		var trabajador = presenciaContext.Trabajador.Where(x => x.usuario.Username == Username).Include(x => x.equipo).FirstOrDefault();
+		Fichajes fich = new Fichajes(trabajador, dt, "Entrada");
+		OperacionesDBContext.InsertaFichaje(fich);
+        presenciaContext.TrabajadorEnTurno.Add(new TrabajadorEnTurno(trabajador, fich));
+        presenciaContext.SaveChanges();
+        BotonFichar.IsVisible = false;
+>>>>>>> Stashed changes
 		BotonFichar.IsEnabled = false;
 		BotonPlegar.IsVisible = true;
 		BotonPlegar.IsEnabled = true;
@@ -146,6 +155,7 @@ public partial class PaginaFichar : ContentPage
 		BotonIniciarTarea.IsVisible = true;
 		if (dt < Entrada)
 		{
+<<<<<<< Updated upstream
 			var operacion = (Entrada-dt);
 			presenciaContext.Logs.Add(new Log("Temprano", "El trabajador " + trabajador.numero_tarjeta + " Ha llegado " + operacion + "m antes. - "+dt));
 		}
@@ -160,6 +170,26 @@ public partial class PaginaFichar : ContentPage
 			presenciaContext.Logs.Add(new Log("En hora", "El trabajador " + trabajador.numero_tarjeta + " Ha llegado a tiempo - "+dt));
 		}
 		presenciaContext.SaveChanges();
+=======
+			if (dt < d)
+			{
+				var operacion = (d - dt);
+				string motivo = await DisplayPromptAsync("Usted llega temprano.", "¿Cual es la razon?");
+				OperacionesDBContext.InsertaLog(new Log("Temprano", "El trabajador " + trabajador.numero_tarjeta + " Ha llegado " + operacion + "m antes. - " + dt));
+			}
+			if (dt > d.AddMinutes(5))
+			{
+				var operacion = (dt - d);
+				string motivo = await DisplayPromptAsync("Usted llega tarde.", "¿Cual es la razon?");
+				OperacionesDBContext.InsertaLog(new Log("Retraso", "El trabajador " + trabajador.numero_tarjeta + " Ha llegado " + operacion + "m tarde debido a " + motivo + " - " + dt));
+                Incidencia inc = new Incidencia(trabajador, "Retraso de" + operacion, dt, false);
+                OperacionesDBContext.InsertaIncidencia(inc, presenciaContext);
+            }
+			if (dt > d && dt <= d.AddMinutes(5))
+			{
+				OperacionesDBContext.InsertaLog(new Log("En hora", "El trabajador " + trabajador.numero_tarjeta + " Ha llegado a tiempo - " + dt));
+			}
+>>>>>>> Stashed changes
 		}
 	private async void BotonPlegar_Clicked(object sender, EventArgs e)
 		{
