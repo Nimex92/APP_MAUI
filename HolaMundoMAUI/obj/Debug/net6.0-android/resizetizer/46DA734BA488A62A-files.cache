@@ -31,7 +31,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\grupos.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\guardar.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\login.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\logout.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\luffy.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\maletin.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\nominas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\nominasmini.png
@@ -40,8 +39,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\problemas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\problemasactivo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\quitartrabajadordegrupo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\quitarusuario.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\redcircle.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\red_circle.gif
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\removegroup.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\tareas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\trabajador.png
@@ -85,7 +82,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\grupos.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\guardar.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\login.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\logout.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\luffy.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\maletin.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\nominas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\nominasmini.png
@@ -94,8 +90,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\problemas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\problemasactivo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\quitartrabajadordegrupo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\quitarusuario.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\redcircle.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\red_circle.gif
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\removegroup.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\tareas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\trabajador.png
@@ -139,7 +133,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\grupos.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\guardar.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\login.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\logout.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\luffy.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\maletin.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\nominas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\nominasmini.png
@@ -148,8 +141,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\problemas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\problemasactivo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\quitartrabajadordegrupo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\quitarusuario.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\redcircle.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\red_circle.gif
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\removegroup.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\tareas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xhdpi\trabajador.png
@@ -193,7 +184,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\grupos.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\guardar.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\login.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\logout.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\luffy.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\maletin.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\nominas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\nominasmini.png
@@ -202,8 +192,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\problemas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\problemasactivo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\quitartrabajadordegrupo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\quitarusuario.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\redcircle.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\red_circle.gif
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\removegroup.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\tareas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxhdpi\trabajador.png
@@ -247,7 +235,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\grupos.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\guardar.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\login.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\logout.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\luffy.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\maletin.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\nominas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\nominasmini.png
@@ -256,8 +243,6 @@ obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\problemas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\problemasactivo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\quitartrabajadordegrupo.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\quitarusuario.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\redcircle.png
-obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\red_circle.gif
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\removegroup.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\tareas.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-xxxhdpi\trabajador.png
